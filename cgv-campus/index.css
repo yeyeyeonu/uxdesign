@@ -12,15 +12,15 @@
   
   .app {
     max-width: 390px;
-    min-height: 100vh;
+    height: min(100vh, 844px);
     margin: 0 auto;
     background: #fff;
-    overflow: hidden;
+    overflow-y: auto;
   }
   
   .screen {
     display: none;
-    min-height: 100vh;
+    min-height: min(100vh, 844px);
     padding: 24px 20px 90px;
   }
   
@@ -54,19 +54,19 @@
   }
 
   .onboarding::before {
-    top: 120px;
+    top: 86px;
     left: -200px;
   }
 
   .onboarding::after {
-    top: 350px;
+    top: 260px;
     left: -350px;
     animation-delay: 2s;
   }
   
   .slide {
     display: none;
-    padding-top: 120px;
+    padding-top: 88px;
   }
   
   .slide.active {
@@ -76,18 +76,18 @@
   
   .tag {
     color: white;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 800;
     letter-spacing: 2px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
   
   .slide h1 {
     color: white;
-    font-size: 42px;
+    font-size: 36px;
     line-height: 1.08;
     letter-spacing: -2px;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
   }
   
   .slide p {
@@ -95,7 +95,7 @@
   }
 
   .slide p:last-child {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.6;
     color: #c8c8c8;
   }
@@ -110,39 +110,39 @@
   }
 
   .stars span:nth-child(1) {
-    top: 100px;
+    top: 78px;
     left: 70px;
   }
 
   .stars span:nth-child(2) {
-    top: 180px;
+    top: 150px;
     right: 80px;
   }
 
   .stars span:nth-child(3) {
-    top: 300px;
+    top: 245px;
     left: 120px;
   }
 
   .stars span:nth-child(4) {
-    top: 420px;
+    top: 335px;
     right: 120px;
   }
 
   .stars span:nth-child(5) {
-    top: 580px;
+    top: 465px;
     left: 60px;
   }
 
   .stars span:nth-child(6) {
-    top: 650px;
+    top: 540px;
     right: 60px;
   }
   
   .dots {
     position: absolute;
     left: 20px;
-    bottom: 106px;
+    bottom: 92px;
     display: flex;
     gap: 8px;
   }
@@ -164,8 +164,8 @@
     position: absolute;
     left: 20px;
     right: 20px;
-    bottom: 34px;
-    padding: 16px;
+    bottom: 26px;
+    padding: 14px;
     border: none;
     border-radius: 999px;
     background: white;
